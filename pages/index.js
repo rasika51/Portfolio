@@ -14,6 +14,8 @@ import {motion} from 'framer-motion';
 // variants
 import {fadeIn} from '../variants';
 
+/* font */
+
 
 const Home = () => {
   return (
@@ -38,8 +40,7 @@ const Home = () => {
                 animate='show'
                 exit='hidden'
                 className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'>
-                loremffffffnfffff ffffffffff fffff fffffffffff fffffffff fffffffff ffffffffffff fffffffffff fffffffffff ffffffff ffffff fffffffffff fffffffff fffffffff fffffffff fffffff f f ffff fffffffff fffffff.
-              </motion.p>
+                I am Rasika Wedaarachchi, a software engineering undergraduate passionate about programming and problem-solving. I enjoy building impactful solutions and continuously improving my skills.</motion.p>
               {/*btn */}
               <div  className='flex justify-center xl:hidden relative'>
                 <ProjectsBtn />
