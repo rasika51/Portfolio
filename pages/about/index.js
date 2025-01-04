@@ -141,7 +141,7 @@ const About = () => {
             animate ='show'
             exit='hidden'
             >
-              10 years ago, I began freelancing as a developer. Since then I've done remote work for agencies, counsulated for startups, and collaborated on digital products for business and consumer use. 
+              10 years ago, I began freelancing as a developer. Since then I&apos;ve done remote work for agencies, counsulated for startups, and collaborated on digital products for business and consumer use. 
           </motion.p>
 
           {/* counters*/}
