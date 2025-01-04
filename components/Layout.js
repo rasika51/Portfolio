@@ -12,7 +12,7 @@ const sora = Sora({
 import Nav from '../components/Nav';
 import Header from '../components/Header';
 import TopLeftImg from '../components/TopLeftImg';
-import { Head } from 'next/document';
+// import { Head } from 'next/document';
 
 const Layout = ({ children }) => {
   return (
