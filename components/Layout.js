@@ -1,5 +1,5 @@
 //fonts
-import {Sora} from '@next/font/google'
+import { Sora } from '@next/font/google'
 
 //font settings
 const sora = Sora({
@@ -14,14 +14,15 @@ import Header from '../components/Header';
 import TopLeftImg from '../components/TopLeftImg';
 import { Head } from 'next/document';
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   return (
-    <div className='page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative'>
-      <TopLeftImg/> 
-      <Nav/> 
-      <Header/>
+    <div className={`page bg-site text-white bg-cover bg-no-repeat ${sora.variable} font-sora relative`}>
+      <TopLeftImg />
+      <Nav />
+      <Header />
       {children}
-    </div>);
+    </div>
+  );
 };
 
 export default Layout;
