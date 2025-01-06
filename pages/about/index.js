@@ -191,7 +191,7 @@ const About = () => {
             download="Rasika-Wedaarachchi-Software_Engineer_Intern-cv" // Sets the downloaded file name
             className="mt-4 px-6 py-3 bg-red-500 text-white font-semibold rounded-lg transform transition-transform duration-300 hover:scale-105"
           >
-            DownloaCV
+            Download CV
           </a>
            
             
