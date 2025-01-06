@@ -1,6 +1,8 @@
+// icons
+
 
 //  components
-import WorkSlider from '../../components/WorkSlider';
+import ServiceSlider from '../../components/ServiceSlider';
 import Bulb from '../../components/Bulb';
 import Circles from '../../components/Circles';
 
@@ -9,22 +11,22 @@ import {motion} from 'framer-motion';
 import {fadeIn} from '../../variants';
 
 
-const Work = () => {
+const Services = () => {
   return( 
     <div className='h-full bg-primary/30 py-36 flex items-center'>
       <Circles />
       <div className='container mx-auto'>
-        <div className='flex flex-col xl:flex-row gap-x-8 '>
+        <div className='flex flex-col xl:flex-row gap-x-8 items-center '>
           {/* text */}
           <div className='text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0'>
             <motion.h2 
-              className='h2 xl:mt-12'
+              className='h2 xl:mt-8'
               variants={fadeIn('up', 0.2)} 
               initial='hidden'
               animate='show'
               exit='hidden' 
             >
-                My work <span className='text-accent'>.</span>
+                Skills<span className='text-accent'> .</span>
             </motion.h2>
             <motion.p 
               variants={fadeIn('up', 0.4)} 
@@ -33,7 +35,7 @@ const Work = () => {
               exit='hidden' 
               className='mb-4 max-w-[400px] mx-auto lg:mx-0'
             >
-              jjjjjjjjjjj jjjjjjjjjjj kkkkkkkkk i yy u u u  tttttttttttttt rrrrrr rrrr rrrr r r rr rrrrrrrrrrrr     rr rrrrrrrrr rrrrrfff f f  fffffffff fffffffff    ffffffffff ffffffff fffffffffff ffffffff
+              My proficiency in various programming languages, frameworks, and tech tools has greatly contributed to my growth as a software engineer. These skills enable me to develop efficient solutions, tackle complex challenges, and adapt to evolving technologies in my career journey.
             </motion.p>
           </div>
 
@@ -45,7 +47,7 @@ const Work = () => {
             exit='hidden'
             className='w-full xl:max-w-[65%]'
           >
-            <WorkSlider />
+            <ServiceSlider />
           </motion.div> 
         </div>
       </div>
@@ -54,4 +56,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Services;

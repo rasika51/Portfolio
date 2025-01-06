@@ -30,9 +30,10 @@ const Home = () => {
               animate='show'
               exit='hidden'
               className='h1'>
-                Transforming Ideas <br/> Into{' '} 
-               <span className='text-accent'> Digital Reality</span>
+                I am Rasika Wedaarachchi, <br/> a {' '} 
+               <span className='text-accent'> Full-Stack </span> Developer
               </motion.h1>
+
               {/*subtitle*/}
               <motion.p 
                 variants={fadeIn('down', 0.3)} 
@@ -40,7 +41,8 @@ const Home = () => {
                 animate='show'
                 exit='hidden'
                 className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'>
-                I am Rasika Wedaarachchi, a software engineering undergraduate passionate about programming and problem-solving. I enjoy building impactful solutions and continuously improving my skills.</motion.p>
+                Dedicated to designing responsive web solutions<br></br> with impactful creativity, seamless functionality, and user-focused digital innovation
+              </motion.p>
               {/*btn */}
               <div  className='flex justify-center xl:hidden relative'>
                 <ProjectsBtn />
@@ -72,7 +74,7 @@ const Home = () => {
             animate='show'
             exit='hidden'
             transition={{duration:1, ease:'easeInOut'}}
-            className='w-full h-full max-w-[737px] max-h-[578px] absolute -bottom-8 lg:bottom-7 lg:right-[-2%]'>
+            className=' w-full h-full max-w-[737px] max-h-[578px] absolute -bottom-15 lg:bottom-12 lg:right-[-2%]'>
             <Avatar/>
           </motion.div>
         </div>

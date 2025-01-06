@@ -8,7 +8,6 @@
   <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="'Helvetica Neue', sans-serif" font-size="250" fill="#FFFFFF">
     <tspan font-weight="bold" font-family="'Pacifico', cursive" font-size="500" fill="url(#grad1)">
       <animate attributeName="fill" values="red;white;red" dur="4s" repeatCount="indefinite" />
-      R</tspan><tspan font-size="250">asika</tspan> Wedaarachchi
-    <tspan fill="red" font-size="400">.</tspan>
+      R</tspan><tspan font-size="250">asika</tspan> Wedaarachchi<tspan fill="red" font-size="400">.</tspan>
   </text>
 </svg>

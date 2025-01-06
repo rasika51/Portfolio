@@ -7,14 +7,13 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 
 // icons
-import {
-  RxCrop,
-  RxDesktop,
-  RxPencil2,
-  RxReader,
-  RxRocket,
-  RxArrowTopRight,
-} from 'react-icons/rx';
+import { RxRocket, RxArrowTopRight } from 'react-icons/rx';
+import { FaReact, FaHtml5, FaCss3Alt, FaGithub } from 'react-icons/fa';
+import { IoLogoJavascript } from 'react-icons/io';
+import { SiTailwindcss, SiMysql, SiNextdotjs, SiVercel } from "react-icons/si";
+import { DiJava } from "react-icons/di";
+
+
 
 //import required modules
 import {FreeMode, Pagination} from 'swiper';
@@ -22,29 +21,45 @@ import {FreeMode, Pagination} from 'swiper';
 // service data
 export const serviceData = [
   {
-    icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <FaReact />,
+    title: 'React',
+   
   },
   {
-    icon: <RxPencil2 />,
-    title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <IoLogoJavascript />,
+    title: 'JavaScript',
+    },
+  {
+    icon: <FaHtml5 />,
+    title: 'HTML',
   },
   {
-    icon: <RxDesktop />,
-    title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <FaCss3Alt />,
+    title: 'CSS',
   },
   {
-    icon: <RxReader />,
-    title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <DiJava />,
+    title: 'Java',
   },
   {
-    icon: <RxRocket />,
-    title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    icon: <SiTailwindcss />,
+    title: 'TailwindCss',
+  },
+  {
+    icon: <SiMysql />,
+    title: 'MySQL',
+  },
+  {
+    icon: <SiNextdotjs />,
+    title: 'Next.js',
+  },
+  {
+    icon: <FaGithub />,
+    title: 'GitHub',
+  },
+  {
+    icon: <SiVercel />,
+    title: 'Vercel',
   },
 ];
 
@@ -60,7 +75,7 @@ const ServiceSlider = () => {
       },
 
       640: {
-        slidesPerView: 3,
+        slidesPerView: 5,
         spaceBetween: 15
       },
       
