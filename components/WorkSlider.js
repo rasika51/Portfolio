@@ -6,22 +6,22 @@ export const workSlider = {
         {
           title: 'My-Portfolio',
           path: '/portfolio.png',
-          redirectTo: '/project-2',
+          // redirectTo: '/project-2',
         },
         {
           title: 'Tasty Burger Website',
           path: '/food1.png',
-          redirectTo: '/lhrs-application',
+          // redirectTo: '/lhrs-application',
         },
         {
           title: 'To-Do Application',
           path: '/todo.png',
-          redirectTo: '/project-3',
+          // redirectTo: '/project-3',
         },
         {
           title: 'Lecture Hall Allocation',
           path: '/lhas1.png',
-          redirectTo: '/project-4',
+          // redirectTo: '/project-4',
         },
       ],
     },
@@ -30,22 +30,22 @@ export const workSlider = {
         {
           title: 'Calculator',
           path: '/cal.png',
-          redirectTo: '/project-5',
+          // redirectTo: '/project-5',
         },
         {
           title: 'My-Portfolio',
           path: '/portfolio.png',
-          redirectTo: '/project-2',
+          // redirectTo: '/project-2',
         },
         {
           title: 'Tasty Burger Website',
           path: '/food1.png',
-          redirectTo: '/lhrs-application',
+          // redirectTo: '/lhrs-application',
         },
         {
           title: 'To-Do Application',
           path: '/todo.png',
-          redirectTo: '/project-3',
+          // redirectTo: '/project-3',
         },
       ],
     },
