@@ -187,7 +187,7 @@ const About = () => {
             {/* Add the button below the college section */}
             {index === 0 && ( // Ensure this button only shows under the "College" section
             <a
-            href="/mycv1.pdf" // Link to your CV in the public folder
+            href="/cv.pdf" // Link to your CV in the public folder
             download="Rasika-Wedaarachchi-Software_Engineer_Intern-cv" // Sets the downloaded file name
             className="mt-4 px-6 py-3 bg-red-500 text-white font-semibold rounded-lg transform transition-transform duration-300 hover:scale-105"
           >
