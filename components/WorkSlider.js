@@ -110,7 +110,7 @@ const WorkSlider = () => {
 
                           {/* Title part 2 */}
                           <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">
-                            PROJECT
+                            {/* PROJECT */}
                           </div>
 
                           {/* Icon */}

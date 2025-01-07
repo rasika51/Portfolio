@@ -1,5 +1,5 @@
-// Testimonial slider data
-export const testimonialData = [
+ // Testimonial slider data
+ export const testimonialData = [
   {
     image: '/icarc.png',
     name: 'ICARC 2024',
@@ -85,7 +85,7 @@ const TestimonialSlider = () => {
                     width={250}
                     height={200}
                     alt=""
-                    // className="transform transition-transform duration-300 group-hover:translate-y-[-10px]"
+                    className="transform transition-transform duration-300 group-hover:translate-y-[-10px]"
                   />
                   {/* Gradient overlay */}
                   <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-60 transition-all duration-700"></div>
