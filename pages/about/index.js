@@ -148,7 +148,7 @@ const About = () => {
 
         {/* info */}
         <motion.div
-          className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
+          className="flex flex-col justify-center w-full xl:max-w-[48%] h-[480px]"
           variants={fadeIn("left", 0.4)}
           initial="hidden"
           animate="show"
