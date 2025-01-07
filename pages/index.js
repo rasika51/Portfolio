@@ -1,85 +1,95 @@
-// next image
-import Image from 'next/image';
+import { useEffect } from "react"; 
+import { motion } from "framer-motion";
 
-
-// compnents
-import ParticlesContainer from '../components/ParticlesContainer';
-import ProjectsBtn from '../components/ProjectsBtn';
-import Avatar from '../components/Avatar';
-
-
-//framer motion
-import {motion} from 'framer-motion';
+// components
+import ParticlesContainer from "../components/ParticlesContainer";
+import ProjectsBtn from "../components/ProjectsBtn";
+import Avatar from "../components/Avatar";
 
 // variants
-import {fadeIn} from '../variants';
-
-/* font */
-
+import { fadeIn } from "../variants";
 
 const Home = () => {
+  useEffect(() => {
+    // Disable scrolling when on the Home page
+    document.body.style.overflow = "hidden";
+    return () => {
+      // Enable scrolling when leaving the Home page
+      document.body.style.overflow = "auto";
+    };
+  }, []);
+
   return (
-      <div className='bg-primary/60 h-screen '>
-        {/* text */}
-        <div className='w-full  h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10'>
-            <div className='text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto'>
-              {/*  title */}
-              <motion.h1
-              variants={fadeIn('down', 0.2)} 
-              initial='hidden'
-              animate='show'
-              exit='hidden'
-              className='h1 mt-[8px]'>
-                I am Rasika Wedaarachchi, <br/> a {' '} 
-               <span className='text-accent'> Full-Stack </span> Developer
-              </motion.h1>
+    <div className="bg-primary/60 h-[100vh] overflow-hidden relative">
+      {/* text */}
+      <div className="w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
+        <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
+          {/* title */}
+          <motion.h1
+            variants={fadeIn("down", 0.2)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="h1 mt-[8px]"
+          >
+            I am Rasika Wedaarachchi, <br /> a{" "}
+            <span className="text-accent">Full-Stack</span> Developer
+          </motion.h1>
 
-              {/*subtitle*/}
-              <motion.p 
-                variants={fadeIn('down', 0.3)} 
-                initial='hidden'
-                animate='show'
-                exit='hidden'
-                className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'>
-                Dedicated to designing responsive web solutions<br></br> with impactful creativity, seamless functionality, and user-focused digital innovation
-              </motion.p>
-              {/*btn */}
-              <div  className='flex justify-center xl:hidden relative'>
-                <ProjectsBtn />
-              </div>
+          {/* subtitle */}
+          <motion.p
+            variants={fadeIn("down", 0.3)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+          >
+            Dedicated to designing responsive web solutions
+            <br />
+            with impactful creativity, seamless functionality, and user-focused
+            digital innovation.
+          </motion.p>
 
-              <motion.div variants={fadeIn('down', 0.4)} 
-                initial='hidden'
-                animate='show'
-                exit='hidden'
-                className='hidden xl:flex'>
-
-                <ProjectsBtn />  
-              </motion.div>
-            </div>
-        </div>
-        {/* image */}
-        <div className='w-full h-full absolute right-0 bottom-0 '>
-          {/* bg img */}
-          <div className='bg-none xl:bg-explosion xl:bg-cover absolute xl:bg-right xl:bg-no-repeat w-full h-full mix-blend-color-dodge translate-z-0'>
+          {/* button */}
+          <div className="flex justify-center xl:hidden relative">
+            <ProjectsBtn />
           </div>
-
-          {/* particles */} 
-          <ParticlesContainer/>
-           
-          {/* avator img*/}
-          <motion.div 
-            variants={fadeIn('up', 0.5)} 
-            initial='hidden'
-            animate='show'
-            exit='hidden'
-            transition={{duration:1, ease:'easeInOut'}}
-            className=' w-full h-full max-w-[737px] max-h-[578px] absolute -bottom-15 lg:bottom-12 lg:right-[-2%]'>
-            <Avatar/>
+          <motion.div
+            variants={fadeIn("down", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="hidden xl:flex"
+          >
+            <ProjectsBtn />
           </motion.div>
         </div>
       </div>
+
+      {/* image */}
+      <div className="w-full h-full absolute right-0 bottom-0 overflow-hidden">
+        {/* bg img */}
+        <div className="bg-none xl:bg-explosion xl:bg-cover absolute xl:bg-right xl:bg-no-repeat w-full h-full mix-blend-color-dodge translate-z-0"></div>
+
+        {/* particles */}
+        <ParticlesContainer />
+
+        {/* avatar img */}
+        <motion.div
+          variants={fadeIn("up", 0.5)}
+          initial="hidden"
+          animate="show"
+          exit="hidden"
+          transition={{ duration: 1, ease: "easeInOut" }}
+          className="absolute bottom-0 right-0 lg:right-[2%] max-w-[600px] max-h-[900px]"
+        >
+          <Avatar />
+        </motion.div>
+      </div>
+    </div>
   );
 };
 
 export default Home;
+// transition={{ duration: 1, ease: "easeInOut" }}
+//           className="w-full h-full max-w-[600px] max-h-[900px] absolute -bottom-15 lg:top-[17%] lg:right-[2%]"

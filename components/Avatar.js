@@ -8,11 +8,11 @@ const Avatar = () => {
     <div className="hidden xl:flex xl:max-w-none">
 
       <Image 
-        src={'/Rasika.png'} 
-        width={737} 
-        height={478} 
+        src={'/Rasika2.png'} 
+        width={700} 
+        height={200} 
         alt=" "
-        className="translate-z-0 w-full h-full"/>
+        className="translate-z-0 object-contain w-full h-auto"/>
     </div>
   );
 };
