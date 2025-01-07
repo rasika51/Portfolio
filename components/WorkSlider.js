@@ -72,7 +72,7 @@ const WorkSlider = () => {
         clickable: true,
       }}
       modules={[Pagination]}
-      className="h-full w-full pb-50"
+      className="h-full w-full "
     >
       {workSlider.slides.map((slide, index) => {
         return (
@@ -81,11 +81,15 @@ const WorkSlider = () => {
               {slide.images.map((image, index) => {
                 return (
                   <div
-                    className="relative rounded-lg overflow-hidden flex items-center justify-center group"
+                    className="relative rounded-lg flex items-center justify-center group"
+                    // className="relative rounded-lg overflow-hidden flex items-center justify-center group"
                     key={index}
                     onClick={() => router.push(image.redirectTo)} // Redirect on image click
                   >
+
                     <div className="relative overflow-hidden group">
+                    {/* <div className="relative overflow-hidden group"> */}
+
                       {/* Image with hover scaling effect */}
                       <Image
                         src={image.path}
