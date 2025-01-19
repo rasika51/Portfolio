@@ -39,7 +39,6 @@ export const aboutData = [
 ];
 
 // components
-import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
 
 // framer motion
@@ -55,16 +54,6 @@ const About = () => {
   return (
     <div className="min-h-screen bg-primary/30 py-32 text-center xl:text-left ">
       <Circles />
-      {/* avatar img
-      <motion.div
-        variants={fadeIn("right", 0.2)}
-        initial="hidden"
-        animate="show"
-        exit="hidden"
-        className="hidden xl:flex absolute bottom-0 -left-[470px]"
-      >
-        <Avatar />
-      </motion.div> */}
 
       <div className="container mx-auto h-full flex flex-col justify-center items-center xl:flex-row gap-x-6 ">
         {/* text */}
@@ -157,7 +146,7 @@ const About = () => {
           <div className="flex gap-x-4 xl:gap-x-8 mx:auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => (
               <div
-                key={itemIndex} // key prop added here
+                key={itemIndex} 
                 className={`cursor-pointer capitalize xl:text-lg relative items-center after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0 ${
                   index === itemIndex
                     ? "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
@@ -178,17 +167,17 @@ const About = () => {
               >
                 {/* title */}
                 <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                <div>{item.infoText}</div> {/* GPA text here */}
+                <div>{item.infoText}</div>
                 <div className="md:flex"></div>
                 <div>{item.stage}</div>
               </div>
             ))}
 
             {/* Add the button below the college section */}
-            {index === 0 && ( // Ensure this button only shows under the "College" section
+            {index === 0 && ( 
             <a
-            href="/Rasika_Wedaarachchi-Software_Engineer_Interview-cv.pdf" // Link to your CV in the public folder
-            download="Rasika-Wedaarachchi-Software_Engineer_Intern-cv" // Sets the downloaded file name
+            href="/Rasika-Wedaarachchi-Software_Engineer_Internship-cv.pdf" 
+            download="Rasika_Wedaarachchi-Software_Engineer_Internship-cv" 
             className="mt-4 px-6 py-3 bg-red-500 text-white font-semibold rounded-lg transform transition-transform duration-300 hover:scale-105"
           >
             Download CV
