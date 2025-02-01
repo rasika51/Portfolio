@@ -125,7 +125,7 @@ const About = () => {
               {/* awards */}
               <div className="relative flex-1 ">
                 <div className="text-2xl xl:text-4xl  text-accent mb-2">
-                  <CountUp start={0} end={80} duration={5} /> %
+                  <CountUp start={0} end={90} duration={5} /> %
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Communication Skill
@@ -176,8 +176,8 @@ const About = () => {
             {/* Add the button below the college section */}
             {index === 0 && ( 
             <a
-            href="/Rasika-Wedaarachchi-Software_Engineer_Internship-cv.pdf" 
-            download="Rasika_Wedaarachchi-Software_Engineer_Internship-cv" 
+            href="/Rasika-Wedaarachchi_Software_Engineer_Internship_Cv.pdf" 
+            download="Rasika-Wedaarachchi_Software_Engineer_Internship_Cv" 
             className="mt-4 px-6 py-3 bg-red-500 text-white font-semibold rounded-lg transform transition-transform duration-300 hover:scale-105"
           >
             Download CV
