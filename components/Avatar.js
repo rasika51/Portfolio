@@ -9,8 +9,8 @@ const Avatar = () => {
 
       <Image 
         src={'/Rasika2.png'} 
-        width={700} 
-        height={200} 
+        width={1200} 
+        height={2200} 
         alt=" "
         className="translate-z-0 object-contain w-full h-auto"/>
     </div>
