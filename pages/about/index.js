@@ -78,12 +78,7 @@ const About = () => {
             animate="show"
             exit="hidden"
           >
-            As a Software Engineering undergraduate, I am passionate about
-            creating innovative software solutions that can drive real-world
-            impact. My goal is to further develop my skills through an
-            internship, where I can contribute to impactful projects, learn
-            from industry professionals, and continue growing as a software
-            engineer.
+            As a Software Engineering undergraduate, I am passionate about creating innovative software solutions that can drive real-world impact. I enjoy designing and developing applications while continuously improving my technical and problem-solving skills. I am now seeking an opportunity to begin my professional career as a Software Engineer, where I can contribute to meaningful projects, collaborate with experienced professionals, and continue growing.
           </motion.p>
 
           {/* counters */}
