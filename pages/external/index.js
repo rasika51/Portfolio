@@ -16,7 +16,7 @@ const Testimonials = () => {
           animate='show'
           exit='hidden'
           className='h2 mb-8 xl:mb-0 '>
-            Empowering Growth Through<span className='text-accent'> Volunteering  </span>& <span className='text-accent'> Competitions</span>
+            Empowering Growth Through<span className='text-accent'> publications, Competitions  </span>& <span className='text-accent'> Volunteering</span>
         </motion.h2>
 
         {/* slider */}
