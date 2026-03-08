@@ -174,8 +174,8 @@ const About = () => {
             {/* Add the button below the college section */}
             {index === 0 && ( 
             <a
-            href="/Rasika-Wedaarachchi_Software_Engineer_Internship_Cv.pdf" 
-            download="Rasika-Wedaarachchi_Software_Engineer_Internship_Cv" 
+            href="/Rasika-Wedaarachchi_Associate_Software_Engineer_Cv.pdf" 
+            download="Rasika-Wedaarachchi_Associate_Software_Engineer_Cv" 
             className="mt-4 px-6 py-3 bg-red-500 text-white font-semibold rounded-lg transform transition-transform duration-300 hover:scale-105"
           >
             Download CV

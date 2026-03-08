@@ -10,8 +10,8 @@ import 'swiper/css/pagination';
 import { RxRocket, RxArrowTopRight } from 'react-icons/rx';
 import { FaReact, FaHtml5, FaCss3Alt, FaGithub } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io';
-import { SiTailwindcss, SiMysql, SiNextdotjs, SiVercel } from "react-icons/si";
-import { DiJava } from "react-icons/di";
+import { SiTailwindcss, SiMysql, SiNextdotjs, SiVercel, SiLaravel } from "react-icons/si";
+import { DiJava, DiLaravel } from "react-icons/di";
 
 
 
@@ -21,9 +21,22 @@ import {FreeMode, Pagination} from 'swiper';
 // service data
 export const serviceData = [
   {
+    icon: <DiLaravel />,
+    title: 'Laravel',
+   
+  },
+  {
+    icon: <SiNextdotjs />,
+    title: 'Next.js',
+  },
+  {
     icon: <FaReact />,
     title: 'React',
    
+  },
+  {
+    icon: <SiMysql />,
+    title: 'MySQL',
   },
   {
     icon: <IoLogoJavascript />,
@@ -44,14 +57,6 @@ export const serviceData = [
   {
     icon: <SiTailwindcss />,
     title: 'TailwindCss',
-  },
-  {
-    icon: <SiMysql />,
-    title: 'MySQL',
-  },
-  {
-    icon: <SiNextdotjs />,
-    title: 'Next.js',
   },
   {
     icon: <FaGithub />,
