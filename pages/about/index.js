@@ -32,6 +32,9 @@ export const aboutData = [
         title: "Debarawewa Central College",
       },
       {
+        title: "Results: A,B,C",
+      },
+      {
         title: "Timeline: 2019",
       },
     ],
@@ -125,7 +128,7 @@ const About = () => {
               {/* awards */}
               <div className="relative flex-1 ">
                 <div className="text-2xl xl:text-4xl  text-accent mb-2">
-                  <CountUp start={0} end={90} duration={5} /> %
+                  <CountUp start={0} end={100} duration={5} /> %
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Communication Skill

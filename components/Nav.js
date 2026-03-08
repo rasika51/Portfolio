@@ -1,4 +1,4 @@
-import { HiHome, HiUser, HiViewColumns, HiRectangleGroup, HiChatBubbleBottomCenterText, HiEnvelope } from 'react-icons/hi2';
+import { HiHome, HiUser, HiViewColumns, HiRectangleGroup, HiChatBubbleBottomCenterText, HiEnvelope, HiBriefcase } from 'react-icons/hi2';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -7,6 +7,7 @@ export const navData = [
   { name: 'home', path: '/', icon: <HiHome /> },
   { name: 'about', path: '/about', icon: <HiUser /> },
   { name: 'skills', path: '/skills', icon: <HiRectangleGroup /> },
+  { name: 'experience', path: '/experience', icon: <HiBriefcase /> },
   { name: 'project', path: '/project', icon: <HiViewColumns /> },
   { name: 'external', path: '/external', icon: <HiChatBubbleBottomCenterText /> },
   { name: 'contact', path: '/contact', icon: <HiEnvelope /> },
