@@ -9,13 +9,13 @@ export const workSlider = {
           // redirectTo: '/project-2',
         },
         {
-          title: 'Tasty Burger Website',
-          path: '/food1.png',
+          title: 'Assets Management System',
+          path: '/hospital.png',
           // redirectTo: '/lhrs-application',
         },
         {
-          title: 'To-Do Application',
-          path: '/todo.png',
+          title: 'Event Management System',
+          path: '/event.png',
           // redirectTo: '/project-3',
         },
         {
@@ -28,9 +28,14 @@ export const workSlider = {
     {
       images: [
         {
-          title: 'Calculator',
-          path: '/cal.png',
-          // redirectTo: '/project-5',
+          title: 'Vision Path Career Website',
+          path: '/mini.png',
+          // redirectTo: '/project-2',
+        },
+        {
+          title: 'Laravel-To-Do Application',
+          path: '/todo2.png',
+          // redirectTo: '/lhrs-application',
         },
         {
           title: 'My-Portfolio',
@@ -42,10 +47,29 @@ export const workSlider = {
           path: '/food1.png',
           // redirectTo: '/lhrs-application',
         },
+      ],
+    },
+    {
+      images: [
+        {
+          title: 'Lecture Hall Allocation',
+          path: '/lhas1.png',
+          // redirectTo: '/project-4',
+        },
+        {
+          title: 'Calculator',
+          path: '/cal.png',
+          // redirectTo: '/project-5',
+        },
         {
           title: 'To-Do Application',
           path: '/todo.png',
           // redirectTo: '/project-3',
+        },
+        {
+          title: 'Student Management System',
+          path: '/student.png',
+          // redirectTo: '/project-2',
         },
       ],
     },
@@ -57,7 +81,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper';
+import 'swiper/css/navigation';
+import { Pagination, Navigation } from 'swiper';
 import { BsArrowRight } from 'react-icons/bs';
 import Image from 'next/image';
 import { useRouter } from 'next/router'; // Import Next.js router
@@ -71,7 +96,9 @@ const WorkSlider = () => {
       pagination={{
         clickable: true,
       }}
-      modules={[Pagination]}
+      navigation={true}
+      grabCursor={true}
+      modules={[Pagination, Navigation]}
       className="h-full w-full "
     >
       {workSlider.slides.map((slide, index) => {

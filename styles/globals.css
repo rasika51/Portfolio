@@ -20,12 +20,21 @@
 }
 
 @layer base {
+  html {
+    @apply overflow-x-hidden;
+    width: 100%;
+    max-width: 100vw;
+  }
+
   body {
     @apply bg-secondary bg-cover bg-fixed bg-center overflow-x-hidden leading-relaxed;
+    width: 100%;
+    max-width: 100vw;
   }
 
   .page {
-    @apply w-full h-screen; /* Full width and height for all screen sizes */
+    @apply w-full h-screen overflow-x-hidden; /* Full width and height for all screen sizes */
+    max-width: 100vw;
   }
 
   /* For smaller screens (up to 767px), enable scrolling */
