@@ -1,6 +1,18 @@
  // Testimonial slider data
  export const testimonialData = [
   {
+    image: '/pub2.png',
+    name: 'COMURS 2026',
+    message:
+      "Published an abstract at the ComURS 2026 conference organized by Sabaragamuwa University of Sri Lanka. This publication contributed to academic discussions and knowledge sharing in the multidisciplinary research domain.",
+  },
+  {
+    image: '/pub1.png',
+    name: 'AIMDA 2026',
+    message:
+      "Presented a research paper at the International Conference on Artificial Intelligence in Multidisciplinary Applications (AIMDA 2026), held on 13th February 2026 at gapHQ, Sri Lanka. This research contributes to the field of software engineering by leveraging explainable AI techniques to improve code quality and maintainability.",
+  },
+  {
     image: '/icarc.png',
     name: 'ICARC 2024',
     message:

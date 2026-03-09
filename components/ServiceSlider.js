@@ -5,6 +5,7 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 // icons
 import { RxRocket, RxArrowTopRight } from 'react-icons/rx';
@@ -16,7 +17,7 @@ import { DiJava, DiLaravel } from "react-icons/di";
 
 
 //import required modules
-import {FreeMode, Pagination} from 'swiper';
+import {FreeMode, Pagination, Navigation} from 'swiper';
 
 // service data
 export const serviceData = [
@@ -80,17 +81,28 @@ const ServiceSlider = () => {
       },
 
       640: {
-        slidesPerView: 5,
+        slidesPerView: 3,
         spaceBetween: 15
       },
       
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 15
+      },
+      
+      1280: {
+        slidesPerView: 5,
+        spaceBetween: 15
+      },
      
     }}
     freeMode={true}
+    grabCursor={true}
     pagination={{
       clickable: true
     }}
-    modules= {[FreeMode, Pagination]}
+    navigation={true}
+    modules= {[FreeMode, Pagination, Navigation]}
     className='h-[240px] sm:h[340px]'
   >
 
