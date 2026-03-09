@@ -6,8 +6,8 @@ import { useRouter } from 'next/router';
 export const navData = [
   { name: 'home', path: '/', icon: <HiHome /> },
   { name: 'about', path: '/about', icon: <HiUser /> },
-  { name: 'skills', path: '/skills', icon: <HiRectangleGroup /> },
   { name: 'experience', path: '/experience', icon: <HiBriefcase /> },
+  { name: 'skills', path: '/skills', icon: <HiRectangleGroup /> },
   { name: 'project', path: '/project', icon: <HiViewColumns /> },
   { name: 'external', path: '/external', icon: <HiChatBubbleBottomCenterText /> },
   { name: 'contact', path: '/contact', icon: <HiEnvelope /> },
